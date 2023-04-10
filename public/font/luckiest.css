@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'LuckiestGuy-Regular';
+  src: url('luckiest-guy.regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LuckiestGuy';
+  src: url('luckiest-guy.ttf') format('truetype');
+}

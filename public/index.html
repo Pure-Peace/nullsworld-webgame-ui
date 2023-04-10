@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Nulls-World</title>
+  <link rel="preload" href="/font/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="/font/Inter-italic.var.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/font/inter.css" />
+  <link rel="preload" href="/font/luckiest-guy.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  <link rel="preload" href="/font/luckiest-guy.regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/font/luckiest.css" />
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #nulls-world-loading {
+      user-select: none;
+      -webkit-user-drag: none;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-family: LuckiestGuy-Regular, LuckiestGuy;
+      height: 100%;
+      width: 100%;
+      z-index: 999;
+      background-color: #00ABFF;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 1px black;
+      transition: .4s ease;
+    }
+
+    #nulls-world-loading img {
+      width: 260px;
+      margin: 20px;
+    }
+
+    #nulls-world-loading div {
+      margin: 20px;
+      animation: nulls-world-loading 2s linear infinite;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    @keyframes nulls-world-loading {
+      0% {
+        opacity: .2;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: .2;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>Please enable javascript.</strong>
+  </noscript>
+  <div id="nulls-world-loading">
+    <img src="/logo.png" />
+    <div>Now Loading...</div>
+  </div>
+  <div id="app"></div>
+</body>
+
+</html>
